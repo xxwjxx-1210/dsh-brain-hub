@@ -1,0 +1,64 @@
+{
+  "name": "dsh-brain-hub",
+  "version": "0.1.0",
+  "description": "Second-brain for DeepSeek Harness: notes in Markdown + git, reviewed card capture from the DeepSeek web chat, cloud/local split, and a toolbar menu in the session header.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    },
+    "./client": {
+      "default": "./dist/client.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "memory",
+    "second-brain",
+    "markdown"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0"
+  },
+  "author": "xxwjxx-1210",
+  "homepage": "https://github.com/xxwjxx-1210/dsh-brain-hub#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxwjxx-1210/dsh-brain-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xxwjxx-1210/dsh-brain-hub/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
