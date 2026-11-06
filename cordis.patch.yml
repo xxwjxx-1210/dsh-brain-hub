@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-brain-hub
+      name: 'dsh-brain-hub'
+      config: {}
+    - id: dsh-brain-hub-client
+      name: 'dsh-brain-hub'
